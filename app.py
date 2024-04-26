@@ -22,19 +22,15 @@ def predict():
             Gender=0
 
 
-        print(Gender)
+        
         Age=float(request.form['Age'])
         print(Age)
         EstimatedSalary=float(request.form['EstimatedSalary'])
-        print(EstimatedSalary)
-
-        
+      
         
         newdata=np.array([[Gender,Age,EstimatedSalary ]])
 
     
-        
-        
         Purchased = model.predict(newdata)
 
       
